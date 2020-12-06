@@ -1,0 +1,41 @@
+{
+  "name": "gatsby-benchmark-graphql",
+  "private": true,
+  "description": "Benchmark site for gatsby-source-graphql",
+  "version": "0.1.0",
+  "license": "MIT",
+  "scripts": {
+    "build": "cross-env GATSBY_EXPERIMENTAL_QUERY_CONCURRENCY=10 gatsby build",
+    "clean": "gatsby clean",
+    "develop": "cross-env ENABLE_GATSBY_REFRESH_ENDPOINT=true GATSBY_EXPERIMENTAL_QUERY_CONCURRENCY=20 gatsby develop",
+    "dev": "cross-env ENABLE_GATSBY_REFRESH_ENDPOINT=true GATSBY_EXPERIMENTAL_QUERY_CONCURRENCY=20 gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "serve": "gatsby serve",
+    "start": "npm run develop",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "cross-env": "^7.0.0",
+    "dotenv": "^8.2.0",
+    "gatsby": "^2.28.0",
+    "gatsby-image": "^2.7.0",
+    "gatsby-source-filesystem": "^2.7.0",
+    "gatsby-source-graphql": "^2.10.0",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "ts-node": "^8.9.0",
+    "typescript": "^3.8.3",
+    "yargs": "^15.3.1"
+  },
+  "devDependencies": {
+    "prettier": "2.0.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gatsbyjs/gatsby/benchmarks/source-contentful"
+  },
+  "bugs": {
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
+  }
+}
